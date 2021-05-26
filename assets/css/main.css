@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;700&display=swap");
 @import url("fontawesome-all.min.css");
 
 /*
@@ -1388,7 +1388,7 @@ html {
 }
 
 body {
-  background-image: url("images/overlay.png"), url("images/bg.jpg");
+  background-image: url("/assets/css/images/new_bg_1.jpg"), url("images/bg.jpg");
   background-repeat: repeat, no-repeat;
   background-size: auto, 100% 100%;
   background-attachment: fixed;
@@ -1463,13 +1463,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 400;
+  font-weight: 700;
   color: #363636;
 }
 
 h1 {
   font-size: 2.4em;
   letter-spacing: -0.015em;
+  font-weight: 700;
 }
 
 h2 {
@@ -2194,6 +2195,22 @@ body.is-preload #wrapper {
   letter-spacing: -0.015em;
   font-size: 1.25em;
   margin: 0.25em 0 0 0;
+}
+
+.blink {
+  animation: blink 1s steps(1, end) infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 980px) {
